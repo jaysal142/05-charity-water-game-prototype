@@ -13,3 +13,155 @@ Secondary Colors:
 - Pink:       #F16061
 
 */
+
+.inter-heading {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --primary-light: #ffc907;
+  --primary-dark: #003366;
+  --secondary-light: #77a8bb;
+  --neutral-light: #fff7e1;
+  --neutral-dark: #1a1a1a;
+  --accent-light: #fed8c1;
+  --accent-dark: #bf6c46;
+  --neutral: #cbccd1;
+}
+
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General page styles */
+body {
+  background-color: var(--neutral-light);
+  color: var(--neutral-dark);
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+/* Reusable content container */
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  align-items: center;
+  color: var(--neutral-dark);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navigation links */
+nav a {
+  color: var(--white);
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--yellow);
+}
+
+.drip-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: var(--secondary-light);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.nav-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.nav-logo {
+  height: 40px;
+  width: 40px;
+}
+
+/* Main content section */
+main {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Buttons */
+.button {
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 6px;
+  color: var(--dark-text);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 12px 24px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--orange);
+}
+
+/* Card component */
+.info-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+  margin: 20px auto;
+  max-width: 400px;
+  padding: 24px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-green);
+  color: var(--white);
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Simple mobile layout */
+@media (max-width: 600px) {
+  header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 12px;
+  }
+}
