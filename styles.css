@@ -191,6 +191,13 @@ main {
   color: var(--primary-light);
 }
 
+.info-right {
+  display: flex;
+  background-color: var(--neutral-light);
+  align-items: center;
+  justify-content: center;
+}
+
 .info-water-can {
   max-width: 100%;
   height: auto;
